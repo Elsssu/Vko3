@@ -16,7 +16,7 @@ public class Safe {
         return safeFolder;
 
     }
-    public String getPIN(){
+    public String hommaaPIN(){
         return pinCode;
     }
     public void setPIN(String tempCode){

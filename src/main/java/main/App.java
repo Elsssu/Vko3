@@ -41,7 +41,7 @@ public class App
                     case 3:
                         System.out.println("Anna PIN-koodi:");
                         String code = sc.nextLine();
-                        String pin = newSafe.getPIN();
+                        String pin = newSafe.hommaaPIN();
                         ArrayList<String> safeFolder =  newSafe.getlist(code);
                         if(code.equals(pin)){
                             for(int x = 0; x < safeFolder.size(); x++){
