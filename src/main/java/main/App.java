@@ -42,10 +42,10 @@ public class App
                         System.out.println("Anna PIN-koodi:");
                         String code = sc.nextLine();
                         String pin = newSafe.hommaaPIN();
-                        ArrayList<String> safeFolder =  newSafe.getlist(code);
+                        ArrayList<String> safeFolderr =  newSafe.getlist(code);
                         if(code.equals(pin)){
-                            for(int x = 0; x < safeFolder.size(); x++){
-                                System.out.println(safeFolder.get(x));
+                            for(int x = 0; x < safeFolderr.size(); x++){
+                                System.out.println(safeFolderr.get(x));
                             }
                         }else {
                             System.out.println("Väärä PIN-koodi!");

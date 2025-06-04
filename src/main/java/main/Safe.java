@@ -13,9 +13,15 @@ public class Safe {
         this.pinCode = pinCode;
     }
     public ArrayList<String> getlist(String code){
-        return safeFolder;
-
-    }
+        String pin = hommaaPIN();
+        ArrayList<String> safeFolderr =  safeFolder;
+        if(code.equals(pin)){
+        }else {
+           safeFolderr = null;
+        }
+        return safeFolderr;
+    }    
+    
     public String hommaaPIN(){
         return pinCode;
     }
